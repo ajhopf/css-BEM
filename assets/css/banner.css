@@ -1,0 +1,46 @@
+.banner{
+  position: relative; /*este position faz com que os filhos do banner se alinhem de forma relativa ao banner*/
+}
+
+.banner__imagem{
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 72px);
+  width: 100%;
+}
+
+.banner__titulo{
+  color: #fdfdfd;
+  font-family: Pacifico, cursive;
+  font-size: 5.0625rem;
+  left: 50%;
+  position: absolute;
+  text-shadow: 0 4px 4px rgba(0,0,0,0.75);
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+/*Responsividade*/
+
+@media screen and (min-width: 0){
+  .banner__imagem{
+    height: calc(100vh - 51px);
+  }
+
+  .banner__titulo{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .banner__titulo{
+    font-size: 5.0625rem;
+  }
+
+  .banner__imagem{
+    height: calc(100vh - 72px);
+  }
+}
